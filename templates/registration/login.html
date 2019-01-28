@@ -1,0 +1,65 @@
+<doctype! html>
+{% load staticfiles %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<title>SMART IRRIGATION SYSTEM-Login</title>
+<link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}" >
+<link rel="stylesheet" type="text/css" href="{% static "css/my.css" %}">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light mybg navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+
+  <a class="navbar-brand" href="#"><img src="{% static "images/2.png" %}" height="55" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    <nav class="navbar navbar-light">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+<center><h1>
+<p id="header"><strong>SMART IRRIGATION SYSTEM</strong></p></h1>
+</br>
+</br>
+
+<form method="post" id="myform">
+  {% csrf_token %}
+  <p><input type="text" name="username" autofocus required id="id_username" placeholder="Username"></p>
+<p><input type="password" name="password" required id="id_password" placeholder="Password"></p>
+
+</br>
+<input id="toggle" name="toggle"  type='submit' class='btn' value='Login'>
+</center>
+</form>
+</div>
+<!-- <footer class="myfoot"><CENTER>&copy; All Rights Reserved<h4>Team Hydra &lpar; NIET &rpar;</h4></footer> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

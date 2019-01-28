@@ -1,0 +1,48 @@
+.mybg{
+background-color:transparent !important;
+font-family: 'Oswald', sans-serif !important;
+
+}
+#header{
+alignment:center;
+font-family: 'Oswald', sans-serif;
+font-size: 60px;
+}
+
+#crop{
+font-size: 22px;
+}
+.a
+{
+width:300px;
+padding-left:100px;
+border-radius:12px 12px 6px 6px;
+padding:10px;
+
+}
+
+.btn{
+background:#960200;
+color:white;
+padding:10px;
+padding-left:80px;
+padding-right:80px;
+}
+
+.myfoot{
+position:absolute;
+height: 80px;
+background: #000000c2;
+color: white;
+bottom: 0;
+right: 0;
+left: 0;
+}
+
+#id_username{
+  padding: 8px;
+}
+
+#id_password{
+  padding: 8px;
+}
